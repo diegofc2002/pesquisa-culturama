@@ -30,6 +30,12 @@ h1 {
     font-family: "Fjalla One", sans-serif;
 }
 
+#success-message-page {
+    font-size: 55px;
+    margin: 50px auto;
+    text-align: center;
+}
+
 form {
     background-color: #FFFFFF;
     padding: 15px;
