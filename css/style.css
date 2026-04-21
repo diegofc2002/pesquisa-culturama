@@ -83,6 +83,15 @@ input[type="color"] {
     padding: 0 5px;
 }
 
+input[type="tel"], input[type="file"] {
+    margin-bottom: 5px;
+}
+
+small {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
 input[type="text"]:invalid, input[type="number"]:invalid, select:invalid, input[type="email"] {
     border-color: red;
 }

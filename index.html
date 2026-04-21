@@ -49,12 +49,14 @@
                     <br>
 
                     <label for="phone-number">Telefone:</label>
-                    <input type="tel" name="user-phone-number" id="phone-number" pattern="\([0-9]{2}\)\ [0-9]{5}\-[0-9]{4}" placeholder="(00) 00000-0000" maxlength="15">
+                    <input type="tel" name="user-phone-number" id="phone-number" aria-describedby="phone-help" pattern="\([0-9]{2}\)\ [0-9]{5}\-[0-9]{4}" placeholder="(00) 00000-0000" maxlength="15">
+                    <small id="phone-help">Preencha com 11 dígitos no formato (DDD) + número.</small>
                     
                     <br>
 
                     <label for="image">Upload de foto:</label>
-                    <input type="file" accept="image/*" name="user-image" id="image">
+                    <input type="file" accept="image/*" name="user-image" id="image" aria-describedby="image-help">
+                    <small id="image-help">Escolha um arquivo no formato PNG ou JPEG.</small>
 
                 </fieldset>
 
@@ -211,8 +213,8 @@
 
                 </fieldset>
 
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpar</button>
+                <button type="submit" aria-label="Enviar dados do formulário.">Enviar</button>
+                <button type="reset" aria-label="Limpar dados do formulário.">Limpar</button>
 
             </form>
         </section>
